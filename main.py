@@ -6,6 +6,7 @@ No network, no randomness, no clock reads: the same bytes every run.
 
 import os
 
+# The pay-off arc: the chain back on the cog, the first stroke, a steadiness that is only the restart.
 TEXT = (
     "The chain is back on the cog. She stands a breath over the bike, "
     "thumb on the grip, one foot resting on the pedal at the bottom of its "
@@ -14,6 +15,7 @@ TEXT = (
 )
 
 
+# Deterministic: the same bytes every run, with no clock reads.
 def main() -> None:
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(out_dir, exist_ok=True)
